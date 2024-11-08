@@ -28,7 +28,6 @@ jobs:
         run: ct lint
 
       - name: Create kind cluster
-        uses: helm/kind-action@latest
-
+        uses: helm/kind-action@v1.10.0
       - name: Run chart-testing (install)
         run: ct install
