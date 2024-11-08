@@ -12,8 +12,8 @@ docker_build_with_restart(
         './src/',
     ],
     live_update=[
-        sync('./web', '/app/web')
-    ]
+        sync('./src/web', '/web/'),
+    ],
 )
 
 yaml = helm(
